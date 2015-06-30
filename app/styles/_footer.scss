@@ -1,0 +1,114 @@
+#footer {
+	background:$base-grey;
+	font-size:14px;
+	line-height:19px;
+	padding: 25px 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+
+	@include mq($until: mobile) {
+		padding:15px 0;
+	}
+	.container-4 {
+		@include mq($until: mobile) {
+			display:table;
+			width:100%;
+			text-align:center;
+		}
+	}
+	a {
+		color:$white;
+		&:hover {
+			text-decoration:none;
+			color:$base-link-hover-color;
+		}
+	}
+	.copyright {
+		font-size:10px;
+		margin:4px 0 0;
+	}
+	.logo {
+		max-width:20px;
+		margin:2px auto;
+		@include mq($until: mobile) {
+			float:none;
+			display:table-header-group;
+			a {
+				display:inline-block;
+				vertical-align:top;
+				margin:0 0 10px;
+				img {
+					max-width:100%;
+					height:auto;
+				}
+			}
+		}
+	}
+	.box {
+		max-width:600px;
+		float:left;
+		margin:-3px 0 0;
+		letter-spacing:2px;
+		@include mq($until: mobile) {
+			display:table-footer-group;
+			max-width:100%;
+			width:100%;
+			float:none;
+		}
+	}
+	.social-networks {
+		float:right;
+		@extend %listreset;
+		@include mq($until: mobile) {
+			float:none;
+			overflow:hidden;
+			display:inline-block;
+			vertical-align:top;
+			margin-bottom:10px;
+		}
+		li {
+			float:left;
+			margin:0 0 0 12px;
+			width:34px;
+			height:34px;
+			text-align:center;
+			line-height:38px;
+			font-size:16px;
+			a {
+				display:block;
+				width:34px;
+				height:34px;
+				border-radius:50%;
+				&:hover {
+					color:$white;
+					opacity:.8;
+				}
+			}
+		}
+		.twitter {
+			a {
+				background:$base-blue-2;
+			}
+		}
+		.facebook {
+			a {
+				background:$base-blue-durk-1;
+			}
+		}
+		.instagram {
+			a {
+				background:$base-grey-18;
+			}
+		}
+		.youtube {
+			a {
+				background:$base-red;
+			}
+		}
+	}
+}

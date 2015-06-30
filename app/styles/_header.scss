@@ -1,0 +1,57 @@
+header {
+  width: 100%;
+  height: 70px;
+  background-image: url('../images/headeBkgr.png');
+  background-position: center -20px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  top:0px;
+  text-align: center;
+
+  .title{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    margin-top: 20px;
+    text-shadow: 1px 1px rgba(0,0,0, .5);
+    font-weight: 700;
+  }
+
+  .circlePhoto {
+    height: 200px;
+    background: url("../images/CoupleShot.png") no-repeat;
+    background-size: cover;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: -54px;
+    background-position-y: -147px;
+  }
+}
+
+
+.active-overley {
+ 	#main {
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
+		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+	}
+	#nav {
+		.burger-menu  {
+			&:after {
+				transform: rotate(45deg);
+				top: 9px;
+			}
+			&:before {
+				transform: rotate(-45deg);
+				top:9px;
+			}
+			span  {
+				display:none;
+			}
+		}
+		.drop {
+			display:block;
+		}
+	}
+}

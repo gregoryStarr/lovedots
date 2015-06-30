@@ -1,0 +1,70 @@
+// brand colors (http://name-of-color.com/)
+$black: #000;
+$white: #fff;
+
+$ironside-gray: #666;
+$base-grey: #2c2c2c;
+$base-grey-1: #bfbfbf;
+$base-grey-2: #3a3a3a;
+$base-grey-3: #626262;
+$base-grey-4: #d4d4d4;
+$base-grey-5: #919191;
+$base-grey-6: #909090;
+$base-grey-7: #979797;
+$base-grey-8: #616161;
+$base-grey-9: #474747;
+$base-grey-10: #7e7e7e;
+$base-grey-11: #cecece;
+$base-grey-12: #a8a8a8;
+$base-grey-13: #f0f0f0;
+$base-grey-14: #c7c7c7;
+$base-grey-15: #e2e2e2;
+$base-grey-16: #a0a0a0;
+$base-grey-17: #cbcbcb;
+$base-grey-18: #595d5a;
+$base-grey-19: #3c3c3c;
+$base-grey-20: #4b5557;
+
+$base-blue: #2fa2ad;
+$base-blue-1: #37b0bb;
+$base-blue-2: #68c6e1;
+$base-blue-durk: #0d1624;
+$base-blue-durk-1: #5071aa;
+
+$base-red: #de6651;
+$base-red-1: #ee2a10;
+
+$base-theme-color1: #fa8b8b;
+$base-theme-color2: #7eaced;
+
+$mountain-mist: $base-grey-1;
+// base variables
+$base-text-color: $white;
+$base-background-color: $base-blue-durk;
+$base-link-color: $ironside-gray;
+$base-link-hover-color: $base-blue;
+$base-form-text-color: $black;
+$base-form-placeholder-color: $base-grey-4;
+$base-input-border-color: $mountain-mist;
+$base-input-bg: $white;
+
+$base-font-size: 24px;
+$base-line-height: 34px;
+$base-font-family:'GillSansCRegular', Arial, Helvetica, sans-serif;
+$font-ico:'icomoon';
+$base-text-interval: ($base-font-size * $base-line-height);
+
+$base-min-width: 320px;
+
+$header-bg: url('../images/headerBkgr.png');
+$burger-bg: $base-blue;
+
+$button-color: $base-grey-2;
+$button-bg: $base-grey-3;
+$button-hover-bg: $base-blue;
+$button-hover-color: $white;
+
+
+
+// @font-face-serif:
+// @font-face-sans-serif:

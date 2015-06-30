@@ -1,0 +1,5 @@
+[Sun Jun 28 2015 12:54:59 GMT-0400 (EDT)] Layer "headerBar.bkg.svg": Unsupported extension: svg
+[Sun Jun 28 2015 12:54:59 GMT-0400 (EDT)] Layer "closeButton.bkg": Unsupported extension: bkg
+[Sun Jun 28 2015 12:54:59 GMT-0400 (EDT)] Layer "Shoot.button": Unsupported extension: button
+[Sun Jun 28 2015 12:54:59 GMT-0400 (EDT)] Layer "srcImageMask.svg": Unsupported extension: svg
+[Sun Jun 28 2015 12:54:59 GMT-0400 (EDT)] Layer "Shoot.button copy": Expected end of input but "c" found.
