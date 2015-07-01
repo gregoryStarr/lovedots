@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var LoveDotsApp = angular
   .module('loveDotsApp', [
     'ngAnimate',
     'ngAria',
@@ -17,7 +17,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ui-router',
+    'ui.router',
     'ngTouch'
   ])
     /*

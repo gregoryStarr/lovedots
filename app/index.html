@@ -9,14 +9,21 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css"/>
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
-    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css"/>
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!-- PIXI -->
+    <script src="scripts/vendor/pixi.js"></script>
+    <script src="scripts/Tile.js"></script>
+    <script src="scripts/PhotoBooth.js"></script>
+
+
 </head>
 <body ng-app="loveDotsApp" ng-controller="MainCtrl">
 <!--[if lt IE 7]>
@@ -27,8 +34,8 @@
 <!-- Add your site or application content here -->
 <div id="LoveDotApp">
     <div id="bkg">
-        <div id="canvasContainer">
-            <canvas id="canvas"></canvas>
+        <div id="canvasContainer" ng-controller="MainCtrl">
+            <canvas pixi="stage" pixi-render="pixiRender" pixi-transparent="true" pixi-renderer="'webgl'"></canvas>
         </div>
     </div>
     <header>
@@ -79,6 +86,8 @@
     ga('send', 'pageview');
 </script>
 
+
+
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/modernizr/modernizr.js"></script>
@@ -105,9 +114,14 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+
+
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/about.js"></script>
+<script src="scripts/services/DotService.js"></script>
+<script src="scripts/directives/pixiDirective.js"></script>
+
 <!-- endbuild -->
 </body>
 </html>
