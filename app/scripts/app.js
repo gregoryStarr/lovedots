@@ -112,3 +112,7 @@ var LoveDotsApp = angular
         }
     ]
 )
+
+.run(function($rootScope){
+
+ })

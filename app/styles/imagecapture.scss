@@ -1,0 +1,47 @@
+@import "base/markup-variables";
+@import "base/markup-mixins";
+
+#imagecapture{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.8);
+  .view{
+    width:50%;
+    height:50%;
+    margin:20% auto;
+    background-color: #fffce0;
+    border: 2px solid #ffffff;
+    border-top: 1px solid #737373;
+    background: #8c8c8c;
+    background-color: #febbbb;
+    @include linear-gradient(0deg,#febbbb, #ff5c5c);
+
+
+    border: 10px rgb(255, 255, 255) outset;
+
+    padding: 0px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background: rgb(224, 139, 139);
+
+    -moz-box-shadow: inset 0px 39px 0px 0px rgb(250, 226, 226);
+    -webkit-box-shadow: inset 0px 39px 0px 0px rgb(250, 226, 226);
+    box-shadow: inset 0px 39px 0px 0px rgb(250, 226, 226);
+
+    .header {
+
+      box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.082);
+      opacity:.75;
+      color: #3b1c0f;
+      text-shadow:2px 2px black;
+      padding:20px;
+    }
+  }
+
+}

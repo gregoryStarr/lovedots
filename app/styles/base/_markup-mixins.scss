@@ -142,7 +142,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
   // Direction has been omitted and happens to be a color-stop
   @if is-direction($direction) == false {
     $color-stops: $direction, $color-stops;
-    $direction: 180deg;
+    $direction: 0deg;
   }
 
   background: nth(nth($color-stops, 1), 1);
